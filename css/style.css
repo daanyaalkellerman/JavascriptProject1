@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Hacked;
+    src: url(https://hackedfont.com/HACKED.ttf);
+}
+span [alt="loog"]{
+  width: 100px;
+  height: 50px;
+}
+.offcanvas-title{
+    font-family: Hacked;
+    color: #E5A1FC;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-brand{
+    font-family: Hacked;
+    color: #E5A1FC;
+}
+.ded{
+    min-height: 88.9vh;
+    display:grid;
+    place-items: center;
+    background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
+    background-size: cover;
+    background-position: center;
+    border-image: fill 0 linear-gradient(#0003,#000);
+}
+.navbar{
+    background-color: #000600;
+    color: #E5A1FC;
+    
+}
+.offcanvas-body{
+    background-color: #000600;
+    color: #E5A1FC;
+
+}
+.offcanvas-header{
+    background-color: #000600;
+    color: #E5A1FC;
+}
+.nav-link{
+    color: #E5A1FC;
+}
+.nav-link:hover{
+    color: #590577;
+}
+.navbar-toggler{
+    background-color: #150022;
+}
+.navbar-toggler:hover{
+    background-color: #150022;
+    border: 2px solid #E5A1FC;
+}
+.landing{
+    overflow-y: hidden;
+}
+.welcome{
+    text-align: center;
+    font-family:Hacked ;
+    color: #E5A1FC;
+    font-size: 1.8em;
+    border: 2px solid #000600;
+    background:linear-gradient(60deg , #150022 ,#000600 );
+    padding: 20px;
+
+}
+.btnAni {
+    color: #000600 ;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 0.5em 1em;
+    position: relative;
+    background:linear-gradient(60deg ,#150022, #000600 );
+    cursor: pointer;
+    font-family: Hacked;
+  }
+  
+  .btnAni:active {
+    transform: scale(.98);
+    box-shadow: .1px .1px 2px #590577  ;
+  }
+  
+  .btnAni span {
+    position: absolute;
+    background: #590577 ;
+    transition: .5s;
+    box-shadow: 1px 1px 20px #590577  ;
+  }
+  
+  .btnAni span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 30%;
+  }
+  
+  .btnAni:hover span:nth-child(1) {
+    height: 100%;
+  }
+  
+  .btnAni span:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 3px;
+  }
+  
+  .btnAni:hover span:nth-child(2) {
+    width: 100%;
+  }
+  
+  .btnAni span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 3px;
+    height: 30%;
+  }
+  
+  .btnAni:hover span:nth-child(3) {
+    height: 100%;
+  }
+  
+  .btnAni span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    width: 15%;
+    height: 3px;
+  }
+  
+  .btnAni:hover span:nth-child(4) {
+    width: 100%;
+  }
+  .btnAni > a{
+    color: #E5A1FC;
+    text-decoration: none;
+  }
+.footer{
+    background-color: black;
+}
+.columns > sections {
+    min-width: 180px;
+}
+
+.bottom {
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px 0px;
+    flex-wrap: wrap ;
+    border-top: 1px solid #E5A1FC;
+    color:#E5A1FC ;
+}
+.icons{
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+  color: rgb(196, 195, 195);
+}
+
+.icons a:hover {
+  color: rgb(255, 0, 0);
+}
+.links{
+    margin-left:auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    color: #E5A1FC;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .links{
+        margin: 0 auto;
+    }
+}
+
+.links > a{
+    color:#E5A1FC ;
+    text-decoration: none;
+}
+
+.links > a:hover{
+    text-decoration: underline;
+}
+
+.bottom > small{
+    font-size: 16px;
+    margin: 0 4px;
+}
+
+    @media (max-width:450px) {
+        .btnAni {
+            color: #000600 ;
+            outline: none;
+            border: none;
+            font-size: 15px;
+            padding: 0.5em 1em;
+            position: relative;
+            background:linear-gradient(60deg ,#150022, #000600 );
+            cursor: pointer;
+            font-family: Hacked;
+          }
+          
+          .btnAni:active {
+            transform: scale(.98);
+            box-shadow: .1px .1px 2px #590577  ;
+          }
+          
+          .btnAni span {
+            position: absolute;
+            background: #000600 ;
+            transition: .5s;
+            box-shadow: 1px 1px 20px #590577  ;
+          }
+          
+          .btnAni span:nth-child(1) {
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 30%;
+          }
+          
+          .btnAni:hover span:nth-child(1) {
+            height: 100%;
+          }
+          
+          .btnAni span:nth-child(2) {
+            top: 0;
+            left: 0;
+            width: 15%;
+            height: 3px;
+          }
+          
+          .btnAni:hover span:nth-child(2) {
+            width: 100%;
+          }
+          
+          .btnAni span:nth-child(3) {
+            bottom: 0;
+            right: 0;
+            width: 3px;
+            height: 30%;
+          }
+          
+          .btnAni:hover span:nth-child(3) {
+            height: 100%;
+          }
+          
+          .btnAni span:nth-child(4) {
+            bottom: 0;
+            right: 0;
+            width: 15%;
+            height: 3px;
+          }
+          
+          .btnAni:hover span:nth-child(4) {
+            width: 100%;
+          }
+    }
+
+ @media (min-width:700px) {
+    .welcome{
+        text-align: center;
+        font-family:Hacked ;
+        color: #E5A1FC;
+        font-size: 5em;
+        border: 2px solid #000600;
+        background:linear-gradient(60deg , #150022 ,#000600 );
+        padding: 10px;
+    
+    }
+    .socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+    }
+    
+} 
