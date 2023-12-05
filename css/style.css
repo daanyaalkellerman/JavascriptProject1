@@ -335,3 +335,80 @@ span [alt="loog"]{
     }
     
 }
+
+/* products>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.pr{
+  min-height: 88.9vh;
+  display:grid;
+  place-items: center;
+  background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
+  background-size: cover;
+  background-position: center;
+  border-image: fill 0 linear-gradient(#0003,#000);
+
+}
+
+.prodCard{
+  width: 360px;
+  height: 480px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.prodCard:hover.addtoCart{
+  bottom: 10px;
+}
+.imgWrap{
+  height: 75%;
+  background-color: #150022;
+  position: relative;
+  overflow: hidden;
+}
+.imgWrap img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: ease-in-out 0.2s;
+
+}
+
+.addtoCart{
+  padding: 10px 25px;
+  background-color: #590577;
+  color: white;
+  border: none;
+  font-size: 16px;
+  position: absolute;
+  bottom: -50px;
+  transform: translateX(-50%);
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.addtoCart:hover{
+  background-color: #000;
+  color: white;
+}
+
+.info{
+  height: 25%;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.info .textP{
+  font-size: 18px;
+  font-weight: 500;
+  color: #E5A1FC;
+}
+
+.info .desP{
+  font-size: 14px;
+  font-weight: 400;
+  color: #E5A1FC;
+  margin: 5px 0 15px 0;
+}
