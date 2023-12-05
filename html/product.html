@@ -13,51 +13,76 @@
    <!-- css link>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>... -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <!-- Nav>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-            <div class="container-fluid">
-              <span class="navbar-brand">
-                  <img src="https://i.postimg.cc/fbDDGHhN/cropped.png" alt="loog">
-              </span>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" aria-modal="true">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" aria-modal="true">DEDSEC STREETWEAR</h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/html/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/html/product.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/html/checkout.html">Checkout</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/html/contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/html/admin.html">Admin</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+<!-- Nav>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+          <span class="navbar-brand">
+              <img src="https://i.postimg.cc/fbDDGHhN/cropped.png" alt="loog">
+          </span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" aria-modal="true">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" aria-modal="true">DEDSEC STREETWEAR</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-          </nav>
-    </header>
-    <main class="pr">
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/product.html">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/checkout.html">Checkout</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/admin.html">Admin</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+<body class="pr">
+  <div>
+    <div class="container sear">
+      <input checked="" class="checkbox" type="checkbox"> 
+      <div class="mainbox">
+          <div class="iconContainer">
+              <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+          </div>
+       <input id="searchEm" class="search_input" placeholder="search" type="text">
+      </div>
+  </div>
+  </div>
+  <div class="container sort-con">
+    <div class="dropend">
+      <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="price">Sort</button>
+      <ul class="dropdown-menu" style>
+        <select>
+          <option value="Low to High">Low to High</option>
+          <option value="High to Low">High to Low</option>
+        </select>
+      </ul>
 
+    </div>
+
+  </div>
+    <main>
+       
     </main>
+    
     <!-- footer>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     <footer>
         <div class="container-fluid footer">
