@@ -339,6 +339,7 @@ span [alt="loog"]{
 /* products>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .pr{
+
   min-height: 88.9vh;
   display:grid;
   place-items: center;
