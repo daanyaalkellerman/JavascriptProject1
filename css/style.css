@@ -344,6 +344,7 @@ span [alt="loog"]{
   gap: 10px;
 }
 .pr{
+
   min-height: 88.9vh;
   display:grid;
   place-items: center;
