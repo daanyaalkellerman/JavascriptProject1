@@ -335,7 +335,6 @@ span [alt="loog"]{
     }
     
 }
-
 /* products>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .layout {
   display: grid;
@@ -521,144 +520,121 @@ span [alt="loog"]{
   fill: white;
   font-size: 1.3em;
 }
-/* 
-@keyframes square-animation {
-  0% {
-   left: 0;
-   top: 0;
-  }
- 
-  10.5% {
-   left: 0;
-   top: 0;
-  }
- 
-  12.5% {
-   left: 32px;
-   top: 0;
-  }
- 
-  23% {
-   left: 32px;
-   top: 0;
-  }
- 
-  25% {
-   left: 64px;
-   top: 0;
-  }
- 
-  35.5% {
-   left: 64px;
-   top: 0;
-  }
- 
-  37.5% {
-   left: 64px;
-   top: 32px;
-  }
- 
-  48% {
-   left: 64px;
-   top: 32px;
-  }
- 
-  50% {
-   left: 32px;
-   top: 32px;
-  }
- 
-  60.5% {
-   left: 32px;
-   top: 32px;
-  }
- 
-  62.5% {
-   left: 32px;
-   top: 64px;
-  }
- 
-  73% {
-   left: 32px;
-   top: 64px;
-  }
- 
-  75% {
-   left: 0;
-   top: 64px;
-  }
- 
-  85.5% {
-   left: 0;
-   top: 64px;
-  }
- 
-  87.5% {
-   left: 0;
-   top: 32px;
-  }
- 
-  98% {
-   left: 0;
-   top: 32px;
-  }
- 
-  100% {
-   left: 0;
-   top: 0;
-  }
- }
- 
- .loader {
-  position: relative;
-  width: 96px;
-  height: 96px;
-  transform: rotate(45deg);
- }
- 
- .loader-square {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 28px;
-  height: 28px;
-  margin: 2px;
-  border-radius: 0px;
-  background: white;
+
+/* admin>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+.admi{
+  min-height: 88.9vh;
+  display:grid;
+  place-items: center;
+  background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  animation: square-animation 10s ease-in-out infinite both;
- }
- 
- .loader-square:nth-of-type(0) {
-  animation-delay: 0s;
- }
- 
- .loader-square:nth-of-type(1) {
-  animation-delay: -1.4285714286s;
- }
- 
- .loader-square:nth-of-type(2) {
-  animation-delay: -2.8571428571s;
- }
- 
- .loader-square:nth-of-type(3) {
-  animation-delay: -4.2857142857s;
- }
- 
- .loader-square:nth-of-type(4) {
-  animation-delay: -5.7142857143s;
- }
- 
- .loader-square:nth-of-type(5) {
-  animation-delay: -7.1428571429s;
- }
- 
- .loader-square:nth-of-type(6) {
-  animation-delay: -8.5714285714s;
- }
- 
- .loader-square:nth-of-type(7) {
-  animation-delay: -10s;
- } */
+  border-image: fill 0 linear-gradient(#0003,#000);
+}
+.tab{
+  margin-top: 2em;
+  flex-wrap: nowrap;
+  background-color: #150022;
+  color: #E5A1FC;
+}
+.tab td{
+  flex-direction: row;
+  flex-grow: inherit;
+  text-align: center;
+  padding-right: 3px;
+  border: 2px solid #590577;
+}
+.addC {
+  margin-top: 6em;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  border-style: solid;
+  background-color: transparent;
+  border-color: #590577;
+  width: 120px;
+  height: 60px;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+  border-width: 2px;
+  font-weight:500;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 50px #E5A1FC, 0 0 20px #E5A1FC, 0 0 15px #E5A1FC;
+  box-shadow: 0 0 50px #E5A1FC, 0 0 30px #E5A1FC,
+}
+.addC:hover {
+  color: #E5A1FC;
+  background-color: #590577;
+  border-color: #590577;
+  text-shadow: 0 0 50px #E5A1FC, 0 0 20px #E5A1FC, 0 0 15px #E5A1FC;
+  box-shadow: 0 0 50px #590577, 0 0 30px #590577,
+    0 0 60px #590577, 0 0 120px #590577;
+  font-size: 20px;
+  width: 130px;
+  height: 80px;
+  letter-spacing: 3px;
+}
+.addC:active {
+  width: 115px;
+  height: 38px;
+  letter-spacing: 0px;
+}
+
+.remove {
+  background-color: #150022;
+
+  border-radius: .5rem;
+  color: #E5A1FC;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .87rem;
+  font-weight: 600;
+  line-height: .1rem;
+  padding: .70rem .1rem;
+  text-align: center;
+  box-shadow: 0 1px 2px 0 #E5A1FC;
+  cursor: pointer;
+}
+
+.remove:hover {
+  color: #590577;
+  background-color: #E5A1FC;
+}
+
+.remove:focus {
+  outline: 2px solid rgba(0,0,0,0.1);
+  outline-offset: 2px;
+}
+
+.remove:focus-visible {
+  box-shadow: none;
+}
+
+.edit {
+  background-color: #150022;
+  
+  border-radius: .5rem;
+  color: #E5A1FC;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .87rem;
+  font-weight: 600;
+  line-height: .1rem;
+  padding: .70rem .1rem;
+  text-align: center;
+  box-shadow: 0 1px 2px 0 #E5A1FC;
+  cursor: pointer;
+}
+
+.edit:hover {
+  color: #590577;
+  background-color: #E5A1FC;
+}
+
+.edit:focus {
+  outline: 2px solid rgba(0,0,0,0.1);
+  outline-offset: 2px;
+}
+
+.edit:focus-visible {
+  box-shadow: none;
+}
