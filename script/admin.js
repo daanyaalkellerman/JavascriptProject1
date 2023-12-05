@@ -18,6 +18,8 @@ let prod5 = new AddProd(5,'Dedsec Grey Hoodie','Plain but comfortable',200,'http
 
 // push products in array
 product.push(prod1,prod2,prod3,prod4,prod5);
+
+console.log([...product])
 // adding products to local storage
 function local(){
     localStorage.setItem('product',JSON.stringify(product));
@@ -47,3 +49,8 @@ function deLaMap(){
 }
 deLaMap()
 
+
+// Find the input
+// Add onchange function to the input
+// Get data from localStorage (everything from this point on happens in the function)
+// Filter the array by comparing what's in the input using the .includes array method and set it everytime there's a change back into localStorage so that the changes can take effect
