@@ -1,3 +1,4 @@
+
 // the creation of the array
 let product = [];
 
