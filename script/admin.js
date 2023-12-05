@@ -50,6 +50,8 @@ function deLaMap(){
 }
 deLaMap()
 
+local()
+
 
 // Find the input
 // Add onchange function to the input

@@ -336,7 +336,12 @@ span [alt="loog"]{
     
 }
 /* products>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
+.layout {
+  display: grid;
+  grid-template-rows: repeat(2, 250px);
+  grid-template-columns: repeat(3, 200px);
+  gap: 10px;
+}
 .pr{
 
   min-height: 88.9vh;
@@ -350,22 +355,20 @@ span [alt="loog"]{
 }
 
 .prodCard{
-  width: 360px;
-  height: 480px;
+  width: 200px;
+  height: 250px;
   overflow: hidden;
   cursor: pointer;
+  background-color: #150022;
 }
 
-.prodCard:hover.addtoCart{
-  bottom: 10px;
-}
 .imgWrap{
-  height: 75%;
-  background-color: #150022;
+  height: 50%;
+  background-color: white;
   position: relative;
   overflow: hidden;
 }
-.imgWrap img{
+.imgWrap .img1{
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -377,30 +380,34 @@ span [alt="loog"]{
 }
 
 .addtoCart{
-  padding: 10px 25px;
+  padding: px;
   background-color: #590577;
   color: white;
   border: none;
   font-size: 16px;
   position: absolute;
-  bottom: -50px;
-  transform: translateX(-50%);
+  bottom: -10px;
+  left: 60px;
+  transform: translateY(-50%);
   transition: ease-in-out 0.2s;
   cursor: pointer;
+  font-family: poppin;
+  border: 1px solid #150022;
 }
 
 .addtoCart:hover{
-  background-color: #000;
-  color: white;
+  background-color: #000600;
+  color: #E5A1FC;
 }
 
 .info{
-  height: 25%;
-  padding: 10px 0;
+  height: 15%;
+  padding: 0px 0;
   box-sizing: border-box;
 }
 
 .info .textP{
+  font-family: poppin;
   font-size: 18px;
   font-weight: 500;
   color: #E5A1FC;
@@ -411,6 +418,107 @@ span [alt="loog"]{
   font-weight: 400;
   color: #E5A1FC;
   margin: 5px 0 15px 0;
+}
+.pP{
+  color: #E5A1FC;
+}
+
+@media (max-width:700px) {
+  .layout {
+    margin-top: 25%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: 300px;
+    gap: 5px 8px;
+  }
+}
+
+.sear {
+  margin-top: 80px;
+  position: relative;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+.mainbox {
+  box-sizing: border-box;
+  position: relative;
+  width: 230px;
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  border-radius: 160px;
+  background-color: #150022;
+  transition: all 0.3s ease;
+}
+
+.checkbox:focus {
+  border: none;
+  outline: none;
+}
+
+.checkbox:checked {
+  right: 10px;
+}
+
+.checkbox:checked ~ .mainbox {
+  width: 50px;
+}
+
+.checkbox:checked ~ .mainbox .search_input {
+  width: 0;
+  height: 0px;
+}
+
+.checkbox:checked ~ .mainbox .iconContainer {
+  padding-right: 8px;
+}
+
+.checkbox {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 17px;
+  top: 10px;
+  z-index: 9;
+  cursor: pointer;
+  appearance: none;
+}
+
+.search_input {
+  box-sizing: border-box;
+  height: 100%;
+  width: 170px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  font-size: 1em;
+  color: white;
+  transition: all 0.3s ease;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.search_input::placeholder {
+  color: rgba(255, 255, 255, 0.776);
+}
+
+.iconContainer {
+  box-sizing: border-box;
+  padding-top: 5px;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.search_icon {
+  box-sizing: border-box;
+  fill: white;
+  font-size: 1.3em;
 }
 
 /* admin>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
