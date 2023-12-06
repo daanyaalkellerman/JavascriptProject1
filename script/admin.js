@@ -33,6 +33,38 @@ let table = document.querySelector('table');
 function deLaMap(){
     let clothing = product.map(function(object,index){
         return `
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color:#E5A1FC">
+              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel" style="font-family: Hacked;">Edit Clothing</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center " style="font-family: poppin; background-color: #150022; color:#E5A1FC"
+              <label for="">Name <br>
+                <input type="text">
+              </label>
+              <br>
+              <label for="">Description <br>
+                <input type="text">
+              </label>
+              <br>
+              <label for="">Price <br>
+                <input type="text">
+              </label>
+              <br>
+              <label for="">Image <br>
+                <input type="text">
+              </label>
+              <br>
+            </div>
+            <div class="modal-footer" style="background-color:#E5A1FC">
+              <button type="button" class="btn edit" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn edit">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
         <tbody id="clothing" >
         <tr style="font-size:12px;">
             <td >${object.id}</td>
