@@ -12,7 +12,7 @@ function work(products){
         <div class="prodCard">
             <div class="imgWrap">
                 <img class="img1" src='${item.url}'>
-                <button class="addtoCart">Add to Cart</button>
+                <button class="addtoCart" value='${index}' data-addToC>Add to Cart</button>
             </div>
             <div class="info">
                 <div class="textP">${item.name}</div>
@@ -54,5 +54,14 @@ function searchEm(){
         sorted.sort((a, b) => b.price - a.price);
     }
     work(sorted);
+}
+main.addEventListener('click', function(){
+    if(event.target.hasAttribute('data-addToC')){
+        addToCart(event.target. value)
+    }
+})
+function addToCart(index){
+    addedToCart.push(product[index])
+    localStorage.setItem('addedToCart', JSON.stringify(addedToCart))
 }
 

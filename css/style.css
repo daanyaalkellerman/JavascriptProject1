@@ -638,3 +638,14 @@ span [alt="loog"]{
 .edit:focus-visible {
   box-shadow: none;
 }
+
+/* checkout>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+.check{
+  min-height: 88.9vh;
+  display:grid;
+  place-items: center;
+  background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
+  background-size: cover;
+  background-position: center;
+  border-image: fill 0 linear-gradient(#0003,#000);
+}
