@@ -2,6 +2,7 @@ document.querySelector('#year').innerHTML = new Date().getFullYear();
 
 let addedToCart = [];
 let main = document.querySelector('main')
+let spinspin = document.querySelector('.spinspin')
 let product = JSON.parse(localStorage.getItem('product')) 
 
 function work(products){
@@ -34,13 +35,14 @@ work(product)
 document.getElementById('searchEm').addEventListener('input', searchEm);
 document.querySelector('select').addEventListener('change', searchEm);
 
-// if(.length===0){
-//     main.innerHTML = `<div class="spinner-border text-danger" role="status">
-//     <span class="sr-only">Loading...</span>
-//   </div>`
-// }else{
-//     work(product)
-// }
+if(product.length===0){
+    spinspin.innerHTML = `<div class="d-flex align-items-center" style="color:Red">
+    <strong role="status"></strong>
+    <div class="spinner-border ms-auto" aria-hidden="true"></div>
+  </div>`
+}else{
+    work(product)
+}
 
 function searchEm(){
     let searchIt = document.getElementById('searchEm').value.toLowerCase();
