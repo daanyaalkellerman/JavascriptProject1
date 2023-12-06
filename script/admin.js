@@ -80,18 +80,32 @@ function deLaMap(){
     })
     table.innerHTML = clothing.join('')
 }
-deLaMap()
 local()
+deLaMap()
 
+function removeItem (position){
+    product.splice(position,1)
+    local();
+    deLaMap();
+}
+let removeProd = document.querySelector('.remove');
 
-addBtn.addEventListener('click',function(){
-    if(event.target.classList.contains('addBtn')){
-        addIt(event.target.value,deLaMap())
+table.addEventListener('click', function(event){
+    if(event.target.classList.contains('remove')){
+        removeItem(event.target.value)
     }
 })
 
-function addIt(index){
-    product.splice(index,1)
-    local()
-    deLaMap()
-}
+
+
+    // removeProd.addEventListener('click',function(){
+    //     if(event.target.classList.contains('remove')){
+    //         removeProd(event.target.value,deLaMap())
+    //     }
+    // })
+    
+    // function removeProd(index){
+    //     product.splice(index,1)
+    //     local()
+    //     deLaMap()
+    // }
