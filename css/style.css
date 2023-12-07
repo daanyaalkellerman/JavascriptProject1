@@ -24,13 +24,13 @@ span [alt="loog"]{
     color: #E5A1FC;
 }
 .ded{
-    min-height: 88.9vh;
-    display:grid;
-    place-items: center;
-    background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
-    background-size: cover;
-    background-position: center;
-    border-image: fill 0 linear-gradient(#0003,#000);
+  min-height: 89.8vh;
+  display:grid;
+  place-items: center;
+  background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
+  background-size: cover;
+  background-position: center;
+  border-image: fill 0 linear-gradient(#0003,#000);
 }
 .navbar{
     background-color: #000600;
@@ -293,27 +293,27 @@ span [alt="loog"]{
 } 
 /* about>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-.abe{
-    min-height: 88.9vh;
-    display:grid;
-    place-items: center;
-    background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
-    background-size: cover;
-    background-position: center;
-    border-image: fill 0 linear-gradient(#0003,#000);
+.aboutMain{
+  min-height: 89.8vh;
+  display:grid;
+  place-items: center;
+  background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
+  background-size: cover;
+  background-position: center;
+  border-image: fill 0 linear-gradient(#0003,#000);
 }
-.abee{
-    margin-top: 50px;
+.aboutHeader{
+    margin-top: 70px;
     text-align: center;
     font-family:Hacked ;
     color: #E5A1FC;
-    font-size: 4em;
+    font-size: 3em;
     border: 2px solid #000600;
     background:linear-gradient(60deg , #150022 ,#000600 );
     padding: 10px;
     margin-bottom: 10px;
 }
-.abo{
+.aboutContainer{
     background:linear-gradient(60deg , #150022 ,#000600 );
     color: #E5A1FC;
     opacity: .9;
@@ -321,9 +321,10 @@ span [alt="loog"]{
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: 2px solid #E5A1FC;
 }
 @media (max-width:400) {
-    .abee{
+    .aboutHeader{
         margin-top: 20px;
         text-align: center;
         font-family:Hacked ;
@@ -344,7 +345,7 @@ span [alt="loog"]{
 }
 .pr{
 
-  min-height: 88.9vh;
+  min-height: 89.8vh;
   display:grid;
   place-items: center;
   background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
@@ -429,7 +430,7 @@ span [alt="loog"]{
     margin-left: 25%;
     display: grid;
     grid-template-rows: repeat(3, 300px);
-    grid-template-columns: 300px;
+    grid-template-columns: 240.5px;
     gap: 5px 8px;
   }
 }
@@ -523,7 +524,7 @@ span [alt="loog"]{
 
 /* admin>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
 .admi{
-  min-height: 88.9vh;
+  min-height: 89.8vh;
   display:grid;
   place-items: center;
   background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
@@ -544,6 +545,7 @@ span [alt="loog"]{
   padding-right: 3px;
   border: 2px solid #590577;
 }
+
 .addC {
   margin-top: 6em;
   cursor: pointer;
@@ -641,11 +643,95 @@ span [alt="loog"]{
 
 /* checkout>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
 .check{
-  min-height: 88.9vh;
+  min-height: 89.8vh;
   display:grid;
   place-items: center;
   background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
   background-size: cover;
   background-position: center;
   border-image: fill 0 linear-gradient(#0003,#000);
+}
+/* contact>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.contactHeader{
+  margin-top: 80px;
+  text-align: center;
+  font-family:Hacked ;
+  color: #E5A1FC;
+  font-size: 3em;
+  border: 2px solid #000600;
+  background:linear-gradient(60deg , #150022 ,#000600 );
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.contactForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact{
+  min-height: 89.8vh;
+  display:grid;
+  place-items: center;
+  background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
+  background-size: cover;
+  background-position: center;
+  border-image: fill 0 linear-gradient(#0003,#000);
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  color: #E5A1FC;
+  font-family: poppin;
+}
+.label{
+  background-color: #150022;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  padding: 0 2px;
+  transition: ease-in-out .1s;
+  pointer-events: none;
+}
+
+.input,textarea{
+  background-color:#150022 ;
+  padding: 12px 20px;
+  border: 1px solid #590577;
+  border-radius: 0px;
+  font-size: 16px;
+  color: #E5A1FC;
+}
+
+input:focus+label,textarea:focus+label{
+  top :-12px;
+}
+
+input:valid+label,textarea:valid+label{
+  top:-12px;
+}
+
+input[type="submit"]{
+  transition: ease-in-out .2s;
+  cursor: pointer;
+  background-color: #150022;
+  color:#E5A1FC;
+  font-family: poppin;
+  border: 1px solid #590577;
+}
+
+input[type="submit"]:hover{
+  background-color: #E5A1FC;
+  color: #590577;
+  font-family: poppin;
 }
