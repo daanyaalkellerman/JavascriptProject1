@@ -60,6 +60,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center " style="font-family: poppin; background-color: #150022; color:#E5A1FC">
+              <br>
               <label for="">Index<br>
                 <input type="number" id="id" required>
               </label>
@@ -88,17 +89,27 @@
           </div>
         </div>
       </div>
-        <button class="addC" id="addBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Clothing</button>
+      <button class="addC" id="addBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Clothing</button>
+      <div class="container sort-con">
+        <div class="dropend">
+          <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="price">Sort</button>
+          <ul class="dropdown-menu" style>
+            <select>
+              <option value="Low to High">Low to High</option>
+              <option value="High to Low">High to Low</option>
+            </select>
+          </ul>
+        </div>
       <div>
         <!-- table>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.  -->
-        <table class="tab align-middle container-sm table-responsive-md ">
-          <thead class=" table tHeadA">
+        <table class="tab align-middle container-sm table-responsive-sm ">
+          <thead class=" table tHeadA" id="table">
             <tr>
               <th>Index</th>
               <th>Name</th>
+              <th>Image</th>
               <th>Price</th>
               <th>Description</th>
-              <th>Image</th>
             </tr>
           </thead>
           <tbody>

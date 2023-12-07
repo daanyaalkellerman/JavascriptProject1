@@ -31,63 +31,68 @@ function local() {
 let tbody = document.querySelector('tbody');
 
 // function to display the table on HTML
+
+
 function deLaMap() {
-    let clothing = product.map(function (object, index) {
-        return `
-            <div class="modal fade" id="exampleModal1"${object.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header" style="background-color:#E5A1FC">
-                            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel" style="font-family: Hacked; color:black">Edit Clothing</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-center " style="font-family: poppin; background-color: #150022; color:#E5A1FC">
-                            <label for="">Name <br>
-                                <input type="text" id="name1" required>
-                            </label>
-                            <br>
-                            <label for="">Description <br>
-                                <input type="text" id="description1" required>
-                            </label>
-                            <br>
-                            <label for="">Price <br>
-                                <input type="number" id="price1" required>
-                            </label>
-                            <br>
-                            <label for="">Image <br>
-                                <input type="text" id="image1" required>
-                            </label>
-                            <br>
-                        </div>
-                        <div class="modal-footer" style="background-color:#E5A1FC">
-                            <button type="button" class="btn edit" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn edit">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <tbody id="clothing" >
-                <tr style="font-size:10px;">
-                    <td>${object.id}</td>
-                    <td>${object.name}</td>
-                    <td>R${object.price}</td>
-                    <td>${object.description}</td>
-                    <td><img src="${object.url}" style="width:60px; height: 60px"></img></td>
-                    <td><button class="btn edit" data-bs-toggle="modal" data-bs-target="#exampleModal1"${object.id}>Edit</button></td>
-                    <td><button class="remove" value="${index}" style="font-size:10px">Delete</button></td>
-                </tr>
-            </tbody>
-        `;
-    });
-    tbody.innerHTML = clothing.join('');
-}
-
-// load products from local storage and display the table
-local();
-deLaMap();
-
-// function to remove an item from the array
-function removeItem(index) {
+  try{let clothing = product.map(function (object, index) {
+    return `
+    <div class="modal fade" id="exampleModal1"${object.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+                      <div class="modal-content">
+                      <div class="modal-header" style="background-color:#E5A1FC">
+                              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel" style="font-family: Hacked; color:black">Edit Clothing</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-center " style="font-family: poppin; background-color: #150022; color:#E5A1FC">
+                              <label for="">Name <br>
+                                  <input type="text" id="name1" required>
+                              </label>
+                              <br>
+                              <label for="">Description <br>
+                                  <input type="text" id="description1" required>
+                                  </label>
+                              <br>
+                              <label for="">Price <br>
+                                  <input type="number" id="price1" required>
+                                  </label>
+                              <br>
+                              <label for="">Image <br>
+                              <input type="text" id="image1" required>
+                              </label>
+                              <br>
+                              </div>
+                          <div class="modal-footer" style="background-color:#E5A1FC">
+                              <button type="button" class="btn edit" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn edit">Save changes</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <tbody id="clothing" >
+              <tr style="font-size:10px;">
+                      <td>${object.id}</td>
+                      <td>${object.name}</td>
+                      <td><img src="${object.url}" style="width:60px; height: 60px"></img></td>
+                      <td>R${object.price}</td>
+                      <td>${object.description}</td>
+                      <td><button class="btn edit" data-bs-toggle="modal" data-bs-target="#exampleModal1"${object.id}>Edit</button></td>
+                      <td><button class="remove" value="${index}" style="font-size:10px">Delete</button></td>
+                      </tr>
+                      </tbody>
+                      `;
+                    });
+      tbody.innerHTML = clothing.join('');
+    }catch{
+      alert('Not working')
+    }
+  }
+  
+  // load products from local storage and display the table
+  local();
+  deLaMap();
+  
+  // function to remove an item from the array
+  function removeItem(index) {
     product.splice(index, 1)
     local();
     deLaMap();
@@ -106,14 +111,15 @@ tbody.addEventListener('click', function (event) {
 })
 
 
-  let addIndex = document.getElementById('id')
-  let addName = document.getElementById('name')
-  let addDescription = document.getElementById('description')
-  let addPrice = document.getElementById('price')
+let addIndex = document.getElementById('id')
+let addName = document.getElementById('name')
+let addDescription = document.getElementById('description')
+let addPrice = document.getElementById('price')
   let addImage = document.getElementById('image')
-
-
-function saveAdded() {
+  
+  
+  function saveAdded() {
+  try{
     let addedProd = {
         index: document.getElementById('id').value,
         name: document.getElementById('name').value,
@@ -123,6 +129,9 @@ function saveAdded() {
     }
     product.push(addedProd)
     localStorage.setItem('product', JSON.stringify(product));
+  }catch{
+    alert('Not working')
+  }
 }
 
 let addBtn = document.getElementById('addBtn')
@@ -131,3 +140,6 @@ addBtn.addEventListener('click', saveAdded)
 let saveChanges = document.getElementById('save').addEventListener('click', function () {
     deLaMap()
 })
+
+
+
