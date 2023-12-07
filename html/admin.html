@@ -52,11 +52,58 @@
           </nav>
     </header>
     <main class="admi">
-      <button class="addC" id="addBtn">Add Clothing</button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color:#E5A1FC">
+              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel" style="font-family: Hacked;">Add Clothing</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center " style="font-family: poppin; background-color: #150022; color:#E5A1FC">
+              <label for="">Index<br>
+                <input type="number" id="id" required>
+              </label>
+              <br>
+              <label for="">Name <br>
+                <input type="text" id="name" required>
+              </label>
+              <br>
+              <label for="">Description <br>
+                <input type="text" id="description" required>
+              </label>
+              <br>
+              <label for="">Price <br>
+                <input type="number" id="price" required>
+              </label>
+              <br>
+              <label for="">Image <br>
+                <input type="text" id="image" required>
+              </label>
+              <br>
+            </div>
+            <div class="modal-footer" style="background-color:#E5A1FC">
+              <button type="button" class="btn edit" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn edit" id="save">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <button class="addC" id="addBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Clothing</button>
       <div>
         <!-- table>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.  -->
-        <table class="tab align-middle container-sm table-responsive-sm">
-          
+        <table class="tab align-middle container-sm table-responsive-md ">
+          <thead class=" table tHeadA">
+            <tr>
+              <th>Index</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
         </table>
       </div>
       <!-- modal>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
