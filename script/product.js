@@ -16,8 +16,9 @@ function work(products){
                 <button class="addtoCart" value='${index}' data-addToC>Add to Cart</button>
             </div>
             <div class="info">
+                <div style="color:#E5A1FC">${1}</div>
                 <div class="textP">${item.name}</div>
-                <div class="desP">${item.description}</div>
+                <div class="desP" style="font-size:10px">${item.description}</div>
                 <div class="pP" id="price">R${item.price}</div>
             </div>
         </div>
