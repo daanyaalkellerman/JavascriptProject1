@@ -25,6 +25,7 @@ function local(){
     localStorage.setItem('product',JSON.stringify(product));
     product = JSON.parse(localStorage.getItem('product'));
 }
+
 // calling the element table
 let table = document.querySelector('table');
 
@@ -65,17 +66,26 @@ function deLaMap(){
           </div>
         </div>
       </div>
-        <tbody id="clothing" >
-        <tr style="font-size:12px;">
-            <td >${object.id}</td>
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+                <th scope="col">Image</th>
+              </tr>
+            </thead>
+            <tbody id="clothing">
+              <tr>
+            
             <td>${object.name}</td>
             <td>R${object.price}</td>
             <td>${object.description}</td>
             <td><img src="${object.url}" style="width:60px; height: 60px"></img></td>
             <td><button class="btn edit" data-bs-toggle="modal" data-bs-target="#exampleModal ">Edit</button></td>
-            <td><button class="remove" value="${index}">Delete</button></td>
-        </tr>
-        </tbody>
+  <td><button class="remove" value="${index}">Delete</button></td>
+  </tr>
+  </tbody>
+
         `  
     })
     table.innerHTML = clothing.join('')
