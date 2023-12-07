@@ -36,14 +36,6 @@ work(product)
 document.getElementById('searchEm').addEventListener('input', searchEm);
 document.querySelector('select').addEventListener('change', searchEm);
 
-if(product.length===0){
-    spinspin.innerHTML = `<div class="d-flex align-items-center" style="color:Red">
-    <strong role="status"></strong>
-    <div class="spinner-border ms-auto" aria-hidden="true"></div>
-  </div>`
-}else{
-    work(product)
-}
 
 function searchEm(){
     let searchIt = document.getElementById('searchEm').value.toLowerCase();
@@ -67,4 +59,14 @@ function addToCart(index){
     addedToCart.push(product[index])
     localStorage.setItem('addedToCart', JSON.stringify(addedToCart))
 }
+
+if(product.length===0){
+    spinspin.innerHTML = `<div class="d-flex align-items-center" style="color:#E5A1FC">
+    <strong role="status"></strong>
+    <div class="spinner-border ms-auto" aria-hidden="true"></div>
+  </div>`
+}else{
+    work(product)
+}
+
 

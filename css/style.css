@@ -650,3 +650,75 @@ span [alt="loog"]{
   background-position: center;
   border-image: fill 0 linear-gradient(#0003,#000);
 }
+/* contact>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.fooorm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conta{
+  min-height: 88.9vh;
+  display:grid;
+  place-items: center;
+  background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
+  background-size: cover;
+  background-position: center;
+  border-image: fill 0 linear-gradient(#0003,#000);
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  color: #E5A1FC;
+  font-family: Hacked;
+}
+.label{
+  background-color: #150022;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  padding: 0 2px;
+  transition: ease-in-out .1s;
+  pointer-events: none;
+}
+
+.input,textarea{
+  background-color:#150022 ;
+  padding: 12px 20px;
+  border: 1px solid #590577;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #E5A1FC;
+}
+
+.input:focus+label,textarea:focus+label{
+  top :-12px;
+}
+
+.input:valid+label,textarea:valid+label{
+  top:-12px;
+}
+
+.input[type="submit"]{
+  transition: ease-in-out .2s;
+  cursor: pointer;
+  background-color: #150022;
+  color:#E5A1FC;
+  font-family: Hacked;
+}
+
+.input[type="submit"]:hover{
+  background-color: #E5A1FC;
+  color: #590577;
+  font-family: Hacked;
+}
