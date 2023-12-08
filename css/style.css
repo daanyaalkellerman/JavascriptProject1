@@ -23,6 +23,9 @@ span [alt="loog"] {
   font-family: Hacked;
   color: #e5a1fc;
 }
+.offcanvas-body ul li a:visited {
+  background-color: #590577;
+}
 .ded {
   min-height: 89.8vh;
   display: grid;
@@ -417,8 +420,8 @@ span [alt="loog"] {
 
 @media (max-width: 700px) {
   .layout {
-    margin-top: 25%;
-    margin-left: 25%;
+    margin-top: 5%;
+    margin-left: 12.5%;
     display: grid;
     grid-template-rows: repeat(3, 300px);
     grid-template-columns: 240.5px;
@@ -525,8 +528,7 @@ span [alt="loog"] {
   border-image: fill 0 linear-gradient(#0003, #000);
 }
 .tab {
-  margin-top: 2em;
-  flex-wrap: nowrap;
+  margin-top: 1em;
   background-color: #150022;
   color: #e5a1fc;
 }
@@ -534,7 +536,6 @@ span [alt="loog"] {
   flex-direction: row;
   flex-grow: inherit;
   text-align: center;
-  padding-right: 3px;
   border: 2px solid #590577;
 }
 

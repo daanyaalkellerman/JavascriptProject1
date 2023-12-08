@@ -4,10 +4,10 @@ document.querySelector('#year').innerHTML = new Date().getFullYear();
 //empty array to store products
 // let theCart = [];
 
-// get cart items from local storage
+// get cart objects from local storage
 let addedToCart = JSON.parse(localStorage.getItem('addedToCart'));
 
-//updates the local storage with the new state of the array
+//updates and saves array
 function local() {
     localStorage.setItem('addedToCart', JSON.stringify(addedToCart));
     // get cart products from local storage
@@ -20,7 +20,7 @@ let table = document.querySelector('tbody');
 function cart() {
     // clear the table content
     table.innerHTML = '';
-    
+
     // search through cart items and display in the table
     addedToCart.map((object, index) => {
         table.innerHTML += `
@@ -35,7 +35,7 @@ function cart() {
             </tbody>
             
         `;
-        
+
     });
 }
 
@@ -47,13 +47,13 @@ let purchased = document.getElementById('purchased');
 
 purchased.addEventListener('click', bought);
 
-// function to empty the array and to display alert
+// empty the array and to display alert
 function bought() {
     try {
         alert('Thank you for purchasing');
         // clear the array
         addedToCart = [];
-        totalPriceElement.innerText ='R'+ 0
+        totalPriceElement.innerText = 'R' + 0
         // update local storage
         local();
         // update the displayed cart
@@ -78,15 +78,15 @@ if (addedToCart.length === 0) {
 // Assuming you have an element with the id 'totalPrice'
 let totalPriceElement = document.getElementById('totalPrice');
 
-function calculatePrice(){
-    let totalPrice = addedToCart.reduce((total,object)=>{
+function calculatePrice() {
+    let totalPrice = addedToCart.reduce((total, object) => {
         console.log(total);
         console.log(object);
         // let quantity = document.querySelector(`#quantity${index+1}`).value* quantity
-        return total + (object.price*object.quantity) 
-    },0)
+        return total + (object.price * object.quantity)
+    }, 0)
     console.log(totalPrice);
-    totalPriceElement.innerText ='R'+ totalPrice
+    totalPriceElement.innerText = 'R' + totalPrice
 }
 
 calculatePrice()

@@ -37,7 +37,7 @@ function deLaMap() {
   try {
     let clothing = product.map(function (object, index) {
       return `
-      <div class="modal fade" id="exampleModal1"${object.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal1"${index} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header" style="background-color:#E5A1FC">
@@ -71,7 +71,6 @@ function deLaMap() {
       </div>
       <tbody id="clothing" >
         <tr style="font-size:10px;">
-          <td>${object.id}</td>
           <td>${object.name}</td>
           <td><img src="${object.url}" style="width:60px; height: 60px"></img></td>
           <td>R${object.price}</td>
@@ -129,6 +128,7 @@ function saveAdded() {
   } catch (e) {
     alert('Error')
   }
+
 }
 //call add button to add item in the array
 let addBtn = document.getElementById('addBtn')
@@ -151,10 +151,11 @@ if (product.length === 0) {
 }
 
 let options = document.querySelector('select')
+
 function sortIt() {
   options.addEventListener('click', () => {
     product.sort((a, b) => {
-   if (a.price > b.price) {
+      if (a.price > b.price) {
         return -1;
       }
       return 0;
