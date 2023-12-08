@@ -62,23 +62,23 @@
             <div class="modal-body text-center " style="font-family: poppin; background-color: #150022; color:#E5A1FC">
               <br>
               <label for="">Index<br>
-                <input type="number" id="id" required>
+                <input type="number" id="id" placeholder="Add Id" required>
               </label>
               <br>
               <label for="">Name <br>
-                <input type="text" id="name" required>
+                <input type="text" id="name" placeholder="Add Name" required>
               </label>
               <br>
               <label for="">Description <br>
-                <input type="text" id="description" required>
+                <input type="text" id="description" placeholder="Add Description" required>
               </label>
               <br>
               <label for="">Price <br>
-                <input type="number" id="price" required>
+                <input type="number" id="price" placeholder="Add Price" required>
               </label>
               <br>
               <label for="">Image <br>
-                <input type="text" id="image" required>
+                <input type="text" id="image" placeholder="Add Image" required>
               </label>
               <br>
             </div>
@@ -91,16 +91,16 @@
       </div>
       <button class="addC" id="addBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Clothing</button>
       <div class="container sort-con">
-        <div class="dropend">
-          <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="price">Sort</button>
-          <ul class="dropdown-menu" style>
-            <select>
-              <option value="Low to High">Low to High</option>
-              <option value="High to Low">High to Low</option>
-            </select>
-          </ul>
+        <div class="dropbottom" style="display: flex; justify-content: center; align-items: center; margin-bottom: 60px;">
+          <button type="button" class="dropdown-toggle edit" data-bs-toggle="dropdown" aria-expanded="false" id="byPrice">Sort</button>
+            <ul class="dropdown-menu edit" style="background-color: #150022;">
+              <select>
+                <option style="color: #150022;"value="Low to High" id="LH">High to Low</option>
+
+              </select>
+            </ul>
         </div>
-      <div>
+      </div>
         <!-- table>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.  -->
         <div class="spinspin">
   

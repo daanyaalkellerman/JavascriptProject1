@@ -1,167 +1,164 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 @font-face {
-    font-family: Hacked;
-    src: url(https://hackedfont.com/HACKED.ttf);
+  font-family: Hacked;
+  src: url(https://hackedfont.com/HACKED.ttf);
 }
-span [alt="loog"]{
+span [alt="loog"] {
   width: 100px;
   height: 50px;
 }
-.offcanvas-title{
-    font-family: Hacked;
-    color: #E5A1FC;
+.offcanvas-title {
+  font-family: Hacked;
+  color: #e5a1fc;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
+.navbar {
+  display: flex;
+  justify-content: space-between;
 }
-.navbar-brand{
-    font-family: Hacked;
-    color: #E5A1FC;
+.navbar-brand {
+  font-family: Hacked;
+  color: #e5a1fc;
 }
-.ded{
+.ded {
   min-height: 89.8vh;
-  display:grid;
+  display: grid;
   place-items: center;
   background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
   background-size: cover;
   background-position: center;
-  border-image: fill 0 linear-gradient(#0003,#000);
+  border-image: fill 0 linear-gradient(#0003, #000);
 }
-.navbar{
-    background-color: #000600;
-    color: #E5A1FC;
-    
+.navbar {
+  background-color: #000600;
+  color: #e5a1fc;
 }
-.offcanvas-body{
-    background-color: #000600;
-    color: #E5A1FC;
-
+.offcanvas-body {
+  background-color: #000600;
+  color: #e5a1fc;
 }
-.offcanvas-header{
-    background-color: #000600;
-    color: #E5A1FC;
+.offcanvas-header {
+  background-color: #000600;
+  color: #e5a1fc;
 }
-.nav-link{
-    color: #E5A1FC;
+.nav-link {
+  color: #e5a1fc;
 }
-.nav-link:hover{
-    color: #590577;
+.nav-link:hover {
+  color: #590577;
 }
-.navbar-toggler{
-    background-color: #150022;
+.navbar-toggler {
+  background-color: #150022;
 }
-.navbar-toggler:hover{
-    background-color: #150022;
-    border: 2px solid #E5A1FC;
+.navbar-toggler:hover {
+  background-color: #150022;
+  border: 2px solid #e5a1fc;
 }
-.landing{
-    overflow-y: hidden;
+.landing {
+  overflow-y: hidden;
 }
-.welcome{
-    text-align: center;
-    font-family:Hacked ;
-    color: #E5A1FC;
-    font-size: 1.8em;
-    border: 2px solid #000600;
-    background:linear-gradient(60deg , #150022 ,#000600 );
-    padding: 20px;
-
+.welcome {
+  text-align: center;
+  font-family: Hacked;
+  color: #e5a1fc;
+  font-size: 1.8em;
+  border: 2px solid #000600;
+  background: linear-gradient(60deg, #150022, #000600);
+  padding: 20px;
 }
 .btnAni {
-    color: #000600 ;
-    outline: none;
-    border: none;
-    font-size: 20px;
-    padding: 0.5em 1em;
-    position: relative;
-    background:linear-gradient(60deg ,#150022, #000600 );
-    cursor: pointer;
-    font-family: Hacked;
-  }
-  
-  .btnAni:active {
-    transform: scale(.98);
-    box-shadow: .1px .1px 2px #590577  ;
-  }
-  
-  .btnAni span {
-    position: absolute;
-    background: #590577 ;
-    transition: .5s;
-    box-shadow: 1px 1px 20px #590577  ;
-  }
-  
-  .btnAni span:nth-child(1) {
-    top: 0;
-    left: 0;
-    width: 3px;
-    height: 30%;
-  }
-  
-  .btnAni:hover span:nth-child(1) {
-    height: 100%;
-  }
-  
-  .btnAni span:nth-child(2) {
-    top: 0;
-    left: 0;
-    width: 15%;
-    height: 3px;
-  }
-  
-  .btnAni:hover span:nth-child(2) {
-    width: 100%;
-  }
-  
-  .btnAni span:nth-child(3) {
-    bottom: 0;
-    right: 0;
-    width: 3px;
-    height: 30%;
-  }
-  
-  .btnAni:hover span:nth-child(3) {
-    height: 100%;
-  }
-  
-  .btnAni span:nth-child(4) {
-    bottom: 0;
-    right: 0;
-    width: 15%;
-    height: 3px;
-  }
-  
-  .btnAni:hover span:nth-child(4) {
-    width: 100%;
-  }
-  .btnAni > a{
-    color: #E5A1FC;
-    text-decoration: none;
-  }
-.footer{
-    background-color: black;
+  color: #000600;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding: 0.5em 1em;
+  position: relative;
+  background: linear-gradient(60deg, #150022, #000600);
+  cursor: pointer;
+  font-family: Hacked;
+}
+
+.btnAni:active {
+  transform: scale(0.98);
+  box-shadow: 0.1px 0.1px 2px #590577;
+}
+
+.btnAni span {
+  position: absolute;
+  background: #590577;
+  transition: 0.5s;
+  box-shadow: 1px 1px 20px #590577;
+}
+
+.btnAni span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 30%;
+}
+
+.btnAni:hover span:nth-child(1) {
+  height: 100%;
+}
+
+.btnAni span:nth-child(2) {
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 3px;
+}
+
+.btnAni:hover span:nth-child(2) {
+  width: 100%;
+}
+
+.btnAni span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 3px;
+  height: 30%;
+}
+
+.btnAni:hover span:nth-child(3) {
+  height: 100%;
+}
+
+.btnAni span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  width: 15%;
+  height: 3px;
+}
+
+.btnAni:hover span:nth-child(4) {
+  width: 100%;
+}
+.btnAni > a {
+  color: #e5a1fc;
+  text-decoration: none;
+}
+.footer {
+  background-color: black;
 }
 .columns > sections {
-    min-width: 180px;
+  min-width: 180px;
 }
 
 .bottom {
-    text-align: center;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 16px 0px;
-    flex-wrap: wrap ;
-    border-top: 1px solid #E5A1FC;
-    color:#E5A1FC ;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 16px 0px;
+  flex-wrap: wrap;
+  border-top: 1px solid #e5a1fc;
+  color: #e5a1fc;
 }
-.icons{
+.icons {
   padding: 20px;
   margin: 10px;
   font-size: 20px;
@@ -171,170 +168,167 @@ span [alt="loog"]{
 .icons a:hover {
   color: rgb(255, 0, 0);
 }
-.links{
-    margin-left:auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 16px;
-    color: #E5A1FC;
-    display: block;
+.links {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  color: #e5a1fc;
+  display: block;
 }
 
 @media (max-width: 800px) {
-    .links{
-        margin: 0 auto;
-    }
+  .links {
+    margin: 0 auto;
+  }
 }
 
-.links > a{
-    color:#E5A1FC ;
-    text-decoration: none;
+.links > a {
+  color: #e5a1fc;
+  text-decoration: none;
 }
 
-.links > a:hover{
-    text-decoration: underline;
+.links > a:hover {
+  text-decoration: underline;
 }
 
-.bottom > small{
-    font-size: 16px;
-    margin: 0 4px;
+.bottom > small {
+  font-size: 16px;
+  margin: 0 4px;
 }
 
-    @media (max-width:450px) {
-        .btnAni {
-            color: #000600 ;
-            outline: none;
-            border: none;
-            font-size: 15px;
-            padding: 0.5em 1em;
-            position: relative;
-            background:linear-gradient(60deg ,#150022, #000600 );
-            cursor: pointer;
-            font-family: Hacked;
-          }
-          
-          .btnAni:active {
-            transform: scale(.98);
-            box-shadow: .1px .1px 2px #590577  ;
-          }
-          
-          .btnAni span {
-            position: absolute;
-            background: #000600 ;
-            transition: .5s;
-            box-shadow: 1px 1px 20px #590577  ;
-          }
-          
-          .btnAni span:nth-child(1) {
-            top: 0;
-            left: 0;
-            width: 3px;
-            height: 30%;
-          }
-          
-          .btnAni:hover span:nth-child(1) {
-            height: 100%;
-          }
-          
-          .btnAni span:nth-child(2) {
-            top: 0;
-            left: 0;
-            width: 15%;
-            height: 3px;
-          }
-          
-          .btnAni:hover span:nth-child(2) {
-            width: 100%;
-          }
-          
-          .btnAni span:nth-child(3) {
-            bottom: 0;
-            right: 0;
-            width: 3px;
-            height: 30%;
-          }
-          
-          .btnAni:hover span:nth-child(3) {
-            height: 100%;
-          }
-          
-          .btnAni span:nth-child(4) {
-            bottom: 0;
-            right: 0;
-            width: 15%;
-            height: 3px;
-          }
-          
-          .btnAni:hover span:nth-child(4) {
-            width: 100%;
-          }
-    }
+@media (max-width: 450px) {
+  .btnAni {
+    color: #000600;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 0.5em 1em;
+    position: relative;
+    background: linear-gradient(60deg, #150022, #000600);
+    cursor: pointer;
+    font-family: Hacked;
+  }
 
- @media (min-width:700px) {
-    .welcome{
-        text-align: center;
-        font-family:Hacked ;
-        color: #E5A1FC;
-        font-size: 5em;
-        border: 2px solid #000600;
-        background:linear-gradient(60deg , #150022 ,#000600 );
-        padding: 10px;
-    
-    }
-    .socials{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: inline-flex;
-    }
-    
-} 
+  .btnAni:active {
+    transform: scale(0.98);
+    box-shadow: 0.1px 0.1px 2px #590577;
+  }
+
+  .btnAni span {
+    position: absolute;
+    background: #000600;
+    transition: 0.5s;
+    box-shadow: 1px 1px 20px #590577;
+  }
+
+  .btnAni span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 30%;
+  }
+
+  .btnAni:hover span:nth-child(1) {
+    height: 100%;
+  }
+
+  .btnAni span:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 3px;
+  }
+
+  .btnAni:hover span:nth-child(2) {
+    width: 100%;
+  }
+
+  .btnAni span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 3px;
+    height: 30%;
+  }
+
+  .btnAni:hover span:nth-child(3) {
+    height: 100%;
+  }
+
+  .btnAni span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    width: 15%;
+    height: 3px;
+  }
+
+  .btnAni:hover span:nth-child(4) {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .welcome {
+    text-align: center;
+    font-family: Hacked;
+    color: #e5a1fc;
+    font-size: 5em;
+    border: 2px solid #000600;
+    background: linear-gradient(60deg, #150022, #000600);
+    padding: 10px;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+  }
+}
 /* about>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-.aboutMain{
+.aboutMain {
   min-height: 89.8vh;
-  display:grid;
+  display: grid;
   place-items: center;
   background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
   background-size: cover;
   background-position: center;
-  border-image: fill 0 linear-gradient(#0003,#000);
+  border-image: fill 0 linear-gradient(#0003, #000);
 }
-.aboutHeader{
-    margin-top: 70px;
+.aboutHeader {
+  margin-top: 70px;
+  text-align: center;
+  font-family: Hacked;
+  color: #e5a1fc;
+  font-size: 3em;
+  border: 2px solid #000600;
+  background: linear-gradient(60deg, #150022, #000600);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.aboutContainer {
+  background: linear-gradient(60deg, #150022, #000600);
+  color: #e5a1fc;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #e5a1fc;
+}
+@media (max-width: 400) {
+  .aboutHeader {
+    margin-top: 20px;
     text-align: center;
-    font-family:Hacked ;
-    color: #E5A1FC;
-    font-size: 3em;
+    font-family: Hacked;
+    color: #e5a1fc;
+    font-size: 1em;
     border: 2px solid #000600;
-    background:linear-gradient(60deg , #150022 ,#000600 );
-    padding: 10px;
-    margin-bottom: 10px;
-}
-.aboutContainer{
-    background:linear-gradient(60deg , #150022 ,#000600 );
-    color: #E5A1FC;
-    opacity: .9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 2px solid #E5A1FC;
-}
-@media (max-width:400) {
-    .aboutHeader{
-        margin-top: 20px;
-        text-align: center;
-        font-family:Hacked ;
-        color: #E5A1FC;
-        font-size: 1em;
-        border: 2px solid #000600;
-        background:linear-gradient(60deg , #150022 ,#000600 );
-        padding: 5px;
-    }
-    
+    background: linear-gradient(60deg, #150022, #000600);
+    padding: 5px;
+  }
 }
 /* products>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .layout {
@@ -343,19 +337,17 @@ span [alt="loog"]{
   grid-template-columns: repeat(3, 200px);
   gap: 10px;
 }
-.pr{
-
+.pr {
   min-height: 89.8vh;
-  display:grid;
+  display: grid;
   place-items: center;
   background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
   background-size: cover;
   background-position: center;
-  border-image: fill 0 linear-gradient(#0003,#000);
-
+  border-image: fill 0 linear-gradient(#0003, #000);
 }
 
-.prodCard{
+.prodCard {
   width: 200px;
   height: 250px;
   overflow: hidden;
@@ -363,13 +355,13 @@ span [alt="loog"]{
   background-color: #150022;
 }
 
-.imgWrap{
+.imgWrap {
   height: 50%;
   background-color: white;
   position: relative;
   overflow: hidden;
 }
-.imgWrap .img1{
+.imgWrap .img1 {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -377,10 +369,9 @@ span [alt="loog"]{
   top: 0;
   left: 0;
   transition: ease-in-out 0.2s;
-
 }
 
-.addtoCart{
+.addtoCart {
   padding: px;
   background-color: #590577;
   color: white;
@@ -396,35 +387,35 @@ span [alt="loog"]{
   border: 1px solid #150022;
 }
 
-.addtoCart:hover{
+.addtoCart:hover {
   background-color: #000600;
-  color: #E5A1FC;
+  color: #e5a1fc;
 }
 
-.info{
+.info {
   height: 15%;
   padding: 0px 0;
   box-sizing: border-box;
 }
 
-.info .textP{
+.info .textP {
   font-family: poppin;
   font-size: 18px;
   font-weight: 500;
-  color: #E5A1FC;
+  color: #e5a1fc;
 }
 
-.info .desP{
+.info .desP {
   font-size: 14px;
   font-weight: 400;
-  color: #E5A1FC;
+  color: #e5a1fc;
   margin: 5px 0 15px 0;
 }
-.pP{
-  color: #E5A1FC;
+.pP {
+  color: #e5a1fc;
 }
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
   .layout {
     margin-top: 25%;
     margin-left: 25%;
@@ -502,7 +493,8 @@ span [alt="loog"]{
   font-size: 1em;
   color: white;
   transition: all 0.3s ease;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .search_input::placeholder {
@@ -523,22 +515,22 @@ span [alt="loog"]{
 }
 
 /* admin>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
-.admi{
+.admi {
   min-height: 89.8vh;
-  display:grid;
+  display: grid;
   place-items: center;
   background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
   background-size: cover;
   background-position: center;
-  border-image: fill 0 linear-gradient(#0003,#000);
+  border-image: fill 0 linear-gradient(#0003, #000);
 }
-.tab{
+.tab {
   margin-top: 2em;
   flex-wrap: nowrap;
   background-color: #150022;
-  color: #E5A1FC;
+  color: #e5a1fc;
 }
-.tab td{
+.tab td {
   flex-direction: row;
   flex-grow: inherit;
   text-align: center;
@@ -547,6 +539,7 @@ span [alt="loog"]{
 }
 
 .addC {
+  font-family: poppin;
   margin-top: 6em;
   cursor: pointer;
   border-radius: 5px;
@@ -559,52 +552,55 @@ span [alt="loog"]{
   transition: 0.2s ease;
   text-transform: uppercase;
   border-width: 2px;
-  font-weight:500;
+  font-weight: 500;
   font-size: 18px;
   letter-spacing: 2px;
-  text-shadow: 0 0 50px #E5A1FC, 0 0 20px #E5A1FC, 0 0 15px #E5A1FC;
-  box-shadow: 0 0 50px #E5A1FC, 0 0 30px #E5A1FC,
+  text-shadow: 0 0 50px #e5a1fc, 0 0 20px #e5a1fc, 0 0 15px #e5a1fc;
+  box-shadow: 0 0 50px #e5a1fc, 0 0 30px #e5a1fc;
 }
 .addC:hover {
-  color: #E5A1FC;
+  font-family: poppin;
+  color: #e5a1fc;
   background-color: #590577;
   border-color: #590577;
-  text-shadow: 0 0 50px #E5A1FC, 0 0 20px #E5A1FC, 0 0 15px #E5A1FC;
-  box-shadow: 0 0 50px #590577, 0 0 30px #590577,
-    0 0 60px #590577, 0 0 120px #590577;
-  font-size: 20px;
-  width: 130px;
-  height: 80px;
+  text-shadow: 0 0 50px #e5a1fc, 0 0 20px #e5a1fc, 0 0 15px #e5a1fc;
+  box-shadow: 0 0 50px #590577, 0 0 20px #590577, 0 0 30px #590577,
+    0 0 80px #590577;
+  font-size: 18px;
+  width: 120px;
+  height: 60px;
   letter-spacing: 3px;
 }
 .addC:active {
-  width: 115px;
-  height: 38px;
+  width: 120px;
+  height: 60px;
   letter-spacing: 0px;
 }
 
 .remove {
   background-color: #150022;
 
-  border-radius: .5rem;
-  color: #E5A1FC;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: .87rem;
+  border-radius: 0.5rem;
+  color: #e5a1fc;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.87rem;
   font-weight: 600;
-  line-height: .1rem;
-  padding: .70rem .1rem;
+  line-height: 0.1rem;
+  padding: 0.7rem 0.1rem;
   text-align: center;
-  box-shadow: 0 1px 2px 0 #E5A1FC;
+  box-shadow: 0 1px 2px 0 #e5a1fc;
   cursor: pointer;
 }
 
 .remove:hover {
   color: #590577;
-  background-color: #E5A1FC;
+  background-color: #e5a1fc;
 }
 
 .remove:focus {
-  outline: 2px solid rgba(0,0,0,0.1);
+  outline: 2px solid rgba(0, 0, 0, 0.1);
   outline-offset: 2px;
 }
 
@@ -614,26 +610,28 @@ span [alt="loog"]{
 
 .edit {
   background-color: #150022;
-  
-  border-radius: .5rem;
-  color: #E5A1FC;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: .87rem;
+
+  border-radius: 0.5rem;
+  color: #e5a1fc;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.87rem;
   font-weight: 600;
-  line-height: .1rem;
-  padding: .70rem .1rem;
+  line-height: 0.1rem;
+  padding: 0.7rem 0.1rem;
   text-align: center;
-  box-shadow: 0 1px 2px 0 #E5A1FC;
+  box-shadow: 0 1px 2px 0 #e5a1fc;
   cursor: pointer;
 }
 
 .edit:hover {
   color: #590577;
-  background-color: #E5A1FC;
+  background-color: #e5a1fc;
 }
 
 .edit:focus {
-  outline: 2px solid rgba(0,0,0,0.1);
+  outline: 2px solid rgba(0, 0, 0, 0.1);
   outline-offset: 2px;
 }
 
@@ -642,42 +640,42 @@ span [alt="loog"]{
 }
 
 /* checkout>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
-.check{
+.check {
   min-height: 89.8vh;
-  display:grid;
+  display: grid;
   place-items: center;
   background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
   background-size: cover;
   background-position: center;
-  border-image: fill 0 linear-gradient(#0003,#000);
+  border-image: fill 0 linear-gradient(#0003, #000);
 }
 /* contact>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-.contactHeader{
+.contactHeader {
   margin-top: 80px;
   text-align: center;
-  font-family:Hacked ;
-  color: #E5A1FC;
+  font-family: Hacked;
+  color: #e5a1fc;
   font-size: 3em;
   border: 2px solid #000600;
-  background:linear-gradient(60deg , #150022 ,#000600 );
+  background: linear-gradient(60deg, #150022, #000600);
   padding: 10px;
   margin-bottom: 10px;
 }
-.contactForm{
+.contactForm {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.contact{
+.contact {
   min-height: 89.8vh;
-  display:grid;
+  display: grid;
   place-items: center;
   background-image: url(https://i.postimg.cc/MGjPWBtv/1920x1080-px-DEDSEC-hacking-Watch-Dogs-Watch-Dogs-2-1290725-wallhere-com.jpg);
   background-size: cover;
   background-position: center;
-  border-image: fill 0 linear-gradient(#0003,#000);
+  border-image: fill 0 linear-gradient(#0003, #000);
 }
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -686,52 +684,55 @@ form{
   width: 100%;
 }
 
-.input{
+.input {
   display: flex;
   flex-direction: column;
   gap: 5px;
   position: relative;
-  color: #E5A1FC;
+  color: #e5a1fc;
   font-family: poppin;
 }
-.label{
+.label {
   background-color: #150022;
   position: absolute;
   left: 20px;
   top: 10px;
   padding: 0 2px;
-  transition: ease-in-out .1s;
+  transition: ease-in-out 0.1s;
   pointer-events: none;
 }
 
-.input,textarea{
-  background-color:#150022 ;
+.input,
+textarea {
+  background-color: #150022;
   padding: 12px 20px;
   border: 1px solid #590577;
   border-radius: 0px;
   font-size: 16px;
-  color: #E5A1FC;
+  color: #e5a1fc;
 }
 
-input:focus+label,textarea:focus+label{
-  top :-12px;
+input:focus + label,
+textarea:focus + label {
+  top: -12px;
 }
 
-input:valid+label,textarea:valid+label{
-  top:-12px;
+input:valid + label,
+textarea:valid + label {
+  top: -12px;
 }
 
-input[type="submit"]{
-  transition: ease-in-out .2s;
+input[type="submit"] {
+  transition: ease-in-out 0.2s;
   cursor: pointer;
   background-color: #150022;
-  color:#E5A1FC;
+  color: #e5a1fc;
   font-family: poppin;
   border: 1px solid #590577;
 }
 
-input[type="submit"]:hover{
-  background-color: #E5A1FC;
+input[type="submit"]:hover {
+  background-color: #e5a1fc;
   color: #590577;
   font-family: poppin;
 }
