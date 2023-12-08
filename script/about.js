@@ -1,2 +1,2 @@
-// display the current year on the page
+// display the year
 document.querySelector('#year').innerHTML = new Date().getFullYear();

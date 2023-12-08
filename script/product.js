@@ -2,7 +2,7 @@
 document.querySelector('#year').innerHTML = new Date().getFullYear();
 
 //empty array to store products
-let addedToCart = [];
+let addedToCart = typeof localStorage.getItem('addedToCart')== 'string'? JSON.parse(localStorage.getItem('addedToCart'))  :[];
 
 // call the main and spinner elements
 let main = document.querySelector('main');
@@ -12,9 +12,9 @@ let spinspin = document.querySelector('.spinspin');
 let product = JSON.parse(localStorage.getItem('product'));
 
 // function to display product cards
-function work(products){
-    let open = products.map((item,index)=>{
-        return`
+function work(products) {
+    let open = products.map((item, index) => {
+        return `
             <div>
                 <div class="prodCard">
                     <div class="imgWrap">
@@ -42,8 +42,8 @@ document.getElementById('searchEm').addEventListener('input', searchEm);
 document.querySelector('select').addEventListener('change', searchEm);
 
 // function to search and sort 
-function searchEm(){
-    try{
+function searchEm() {
+    try {
         // get search input and sort option values
         let searchIt = document.getElementById('searchEm').value.toLowerCase();
         let options = document.querySelector('select').value;
@@ -68,20 +68,28 @@ function searchEm(){
 }
 
 //calling the button that adds to cart 
-main.addEventListener('click', function(){
-    if(event.target.hasAttribute('data-addToC')){
+main.addEventListener('click', function () {
+    if (event.target.hasAttribute('data-addToC')) {
         addToCart(event.target.value);
     }
 });
 
 // function to add products to the cart
-function addToCart(index){
-    addedToCart.push(product[index]);
-    localStorage.setItem('addedToCart', JSON.stringify(addedToCart));
+function addToCart(index) {
+    try{
+        if(addedToCart.some(item=> item === product[index])){
+            throw new Error('Product was added already, change quantity in checkout')
+        }        
+        addedToCart.push(product[index]);
+        localStorage.setItem('addedToCart', JSON.stringify(addedToCart));
+    }
+    catch(e){
+        alert('error.message')
+    }
 }
 
 // display spinner if product data is not available, otherwise display the product cards
-if(product.length === 0){
+if (product.length === 0) {
     spinspin.innerHTML = `<div class="d-flex align-items-center" style="color:#E5A1FC">
         <strong role="status"></strong>
         <div class="spinner-border ms-auto" aria-hidden="true"></div>
@@ -89,6 +97,3 @@ if(product.length === 0){
 } else {
     work(product);
 }
-
-
-

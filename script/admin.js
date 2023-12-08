@@ -1,4 +1,4 @@
-// display the current year on the page
+// display the current the year
 document.querySelector('#year').innerHTML = new Date().getFullYear();
 
 //empty array to store products
@@ -6,11 +6,12 @@ let product = [];
 
 //constructor function to add products
 function AddProd(id, name, description, price, url) {
-    this.id = id,
+  this.id = id,
     this.name = name,
     this.description = description,
     this.price = price,
-    this.url = url
+    this.url = url,
+    this.quantity = 1
 }
 
 // creates products 
@@ -25,8 +26,8 @@ product.push(prod1, prod2, prod3, prod4, prod5);
 
 // add products to local storage
 function local() {
-    localStorage.setItem('product', JSON.stringify(product));
-    product = JSON.parse(localStorage.getItem('product'));
+  localStorage.setItem('product', JSON.stringify(product));
+  product = JSON.parse(localStorage.getItem('product'));
 }
 
 // call the table body element
@@ -45,25 +46,25 @@ function deLaMap() {
             </div>
             <div class="modal-body text-center " style="font-family: poppin; background-color: #150022; color:#E5A1FC">
               <label for="">Name <br>
-                <input type="text" id="name1" required>
+                <input type="text" id="name1" placeholder="Edit Name" value="${object.name}" required>
               </label>
               <br>
               <label for="">Description <br>
-                <input type="text" id="description1" required>
+                <input type="text" id="description1" placeholder="Edit Description" value="${object.description}"  required>
               </label>
               <br>
               <label for="">Price <br>
-                <input type="number" id="price1" required>
+                <input type="number" id="price1"placeholder="Edit Price" value="${object.price}"  required>
               </label>
               <br>
               <label for="">Image <br>
-                <input type="text" id="image1" required>
+                <input type="text" id="image1" placeholder="Edit Image" value="${object.url}" required>
               </label>
               <br>
             </div>
             <div class="modal-footer" style="background-color:#E5A1FC">
               <button type="button" class="btn edit" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn edit">Save changes</button>
+              <button type="button" class="btn edit" id="save1">Save changes</button>
             </div>
           </div>
         </div>
@@ -75,14 +76,14 @@ function deLaMap() {
           <td><img src="${object.url}" style="width:60px; height: 60px"></img></td>
           <td>R${object.price}</td>
           <td>${object.description}</td>
-          <td><button class="btn edit" data-bs-toggle="modal" data-bs-target="#exampleModal1"${object.id}>Edit</button></td>
+          <td><button class="btn edit" data-bs-toggle="modal" data-bs-target="#exampleModal1"value="${index+1}" id="edit">Edit</button></td>
           <td><button class="remove" value="${index}" style="font-size:10px">Delete</button></td>
         </tr>
       </tbody>
       `;
     });
     tbody.innerHTML = clothing.join('');
-  } catch {
+  } catch (e) {
     alert('Error');
   }
 }
@@ -91,7 +92,7 @@ function deLaMap() {
 local();
 deLaMap();
 
-// function to remove an item from the array
+// function to remove product
 function removeItem(index) {
   product.splice(index, 1)
   local();
@@ -101,7 +102,7 @@ function removeItem(index) {
 // call the remove button
 let removeProd = document.querySelector('.remove');
 
-// add event listener to the table body
+// add event listener to the table
 tbody.addEventListener('click', function (event) {
   // check if the clicked element has the class 'remove'
   if (event.target.classList.contains('remove')) {
@@ -111,11 +112,7 @@ tbody.addEventListener('click', function (event) {
 })
 
 //call the id of the input
-let addIndex = document.getElementById('id')
-let addName = document.getElementById('name')
-let addDescription = document.getElementById('description')
-let addPrice = document.getElementById('price')
-let addImage = document.getElementById('image')
+
 
 //give each input a value
 function saveAdded() {
@@ -129,18 +126,19 @@ function saveAdded() {
     }
     product.push(addedProd)
     localStorage.setItem('product', JSON.stringify(product));
-  } catch {
+  } catch (e) {
     alert('Error')
   }
 }
 //call add button to add item in the array
 let addBtn = document.getElementById('addBtn')
-addBtn.addEventListener('click', saveAdded)
+// addBtn.addEventListener('click', saveAdded)
 //saves the item in the array
-let saveChanges = document.getElementById('save').addEventListener('click', function () {
+let saveChanges = document.getElementById('save')
+saveChanges.addEventListener('click', saveAdded)
+saveChanges.addEventListener('click', function () {
   deLaMap()
 })
-
 let spinspin = document.querySelector('.spinspin')
 
 if (product.length === 0) {
@@ -152,4 +150,46 @@ if (product.length === 0) {
   deLaMap(product)
 }
 
+let options = document.querySelector('select')
+function sortIt() {
+  options.addEventListener('click', () => {
+    product.sort((a, b) => {
+   if (a.price > b.price) {
+        return -1;
+      }
+      return 0;
+    });
+    tbody.innerHTML = "";
+    deLaMap();
+  });
+}
+sortIt();
+deLaMap()
+localStorage.setItem('product', JSON.stringify(product));
 
+// let editBtn = document.getElementById('edit')
+// editBtn.addEventListener('click',editThis)
+// let saveEdit = document.getElementById('save1')
+// saveEdit.addEventListener('click',editThis)
+
+// function editThis(){
+//   Object.assign({}, AddProd())
+//   let editedProd = product.forEach(function(object,index){
+//     return `
+//     <tbody id="clothing" >
+//     <tr style="font-size:10px;">
+//       <td>${object.id}</td>
+//       <td>${object.name}</td>
+//       <td><img src="${object.url}" style="width:60px; height: 60px"></img></td>
+//       <td>R${object.price}</td>
+//       <td>${object.description}</td>
+//       <td><button class="btn edit" data-bs-toggle="modal" data-bs-target="#exampleModal1"${object.id} id="edit">Edit</button></td>
+//       <td><button class="remove" value="${index}" style="font-size:10px">Delete</button></td>
+//     </tr>
+//   </tbody>
+//     `
+//   })
+//   tbody.innerHTML = editedProd.join('')
+//   localStorage.setItem('product', JSON.stringify(product))
+// product.push(editedProd)
+// }
