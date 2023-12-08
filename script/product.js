@@ -1,8 +1,8 @@
-// display the current year on the page
+// display the year
 document.querySelector('#year').innerHTML = new Date().getFullYear();
 
-//empty array to store products
-let addedToCart = typeof localStorage.getItem('addedToCart')== 'string'? JSON.parse(localStorage.getItem('addedToCart'))  :[];
+//array to store the products in the cart
+let addedToCart = typeof localStorage.getItem('addedToCart') == 'string' ? JSON.parse(localStorage.getItem('addedToCart')) : [];
 
 // call the main and spinner elements
 let main = document.querySelector('main');
@@ -34,7 +34,7 @@ function work(products) {
     main.innerHTML = open.join('');
 }
 
-// call the work function to display product cards
+// call the work() function to display product cards
 work(product);
 
 // adding eventListeners
@@ -76,15 +76,14 @@ main.addEventListener('click', function () {
 
 // function to add products to the cart
 function addToCart(index) {
-    try{
-        if(addedToCart.some(item=> item === product[index])){
+    try {
+        if (addedToCart.some(item => item === product[index])) {
             throw new Error('Product was added already, change quantity in checkout')
-        }        
+        }
         addedToCart.push(product[index]);
         localStorage.setItem('addedToCart', JSON.stringify(addedToCart));
-    }
-    catch(e){
-        alert('error.message')
+    } catch (e) {
+        alert('Product was added already, change quantity in checkout')
     }
 }
 
